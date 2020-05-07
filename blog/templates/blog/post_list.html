@@ -1,4 +1,15 @@
-<html>
+<div>
+    <h1><a href="/">Likhitha's Django Blog</a></h1>
+</div>
+
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+<!-- <html>
     <head>
         <title>Likhitha's Django blog</title>
     </head>
@@ -19,4 +30,4 @@
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
         </div>
     </body>
-</html>
+</html> -->
